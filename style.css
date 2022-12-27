@@ -13,7 +13,7 @@ h2, h4, p {
 }
 
 body {
-  padding: 20px;
+  padding: 5px;
 }
 
 #card {
@@ -140,7 +140,7 @@ ul {
   }
 }
 
-@media (min-width: 656px) {
+@media (min-width: 626px) {
   #card {
     width: 600px;
     height: 400px;
