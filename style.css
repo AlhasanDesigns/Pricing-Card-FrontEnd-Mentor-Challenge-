@@ -134,7 +134,13 @@ ul {
   font-size: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 236px) {
+  #card {
+    width: 180px;
+  }
+}
+
+@media (min-width: 656px) {
   #card {
     width: 600px;
     height: 400px;
