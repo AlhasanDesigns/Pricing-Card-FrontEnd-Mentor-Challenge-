@@ -17,11 +17,12 @@ body {
 }
 
 #card {
-  width: 600px;
-  height: 400px;
+  display: flex;
   box-shadow: 3px 6px 10px 2px rgba(0,0,0,0.15);
   border-radius: 10px;
   overflow: hidden;
+  flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 #top-section {
@@ -47,6 +48,8 @@ body {
 
 
 #bottom-section {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 55%;
   color: #e5eff5;
@@ -99,30 +102,55 @@ button:hover {
 }
 
 #bottom-left-section {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   vertical-align: top;
-  width: 50%;
+  width: 100%;
   height: 100%;
   background-color: #2ab2af;
   padding: 25px;
 }
 
 #bottom-right-section {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   vertical-align: top;
-  width: 50%;
+  width: 100%;
   height: 100%;
   background-color: #4dc9c6;
   padding: 25px;
 }
 
 #bottom-right-section h4 {
-  margin-bottom: 20px;
+  margin-bottom: -10px;
   font-size: 1.2rem;
 }
 
 ul {
   padding: 0;
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  #card {
+    width: 600px;
+    height: 400px;
+  }
+  #bottom-right-section, #bottom-left-section {
+    align-items: start;
+    width: 50%;
+    height: 100%;
+  }
+  
+  ul {
+    font-size: 0.9rem;
+    
+  }
+  
+  #bottom-right-section h4 {
+    margin-bottom: 5px;
+  }
 }
