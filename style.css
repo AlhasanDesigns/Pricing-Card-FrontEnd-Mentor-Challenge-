@@ -1,7 +1,4 @@
 html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: 'Karla', sans-serif;
   font-size: 16px;
 }
@@ -11,7 +8,9 @@ h2, h4, p {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #card {
@@ -139,7 +138,7 @@ ul {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 616px) {
   #card {
     width: 600px;
     height: 400px;
